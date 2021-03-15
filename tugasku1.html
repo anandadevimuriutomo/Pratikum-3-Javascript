@@ -1,0 +1,42 @@
+<html>
+<head></head>
+   <script language="JavaScript">  
+function test () {
+	//if untuk membuat konversi nilai angka menjadi nilai huruf
+	var val1=document.kirim.T1.value
+	if(val1>=0&&40)
+		document.kirim.T2.value="E"
+	//jika nilainya lebih dari 0 dan kurang dari 40 jadi hasilnya E
+	if(val1>41&&55)
+		document.kirim.T2.value="D"
+	//jika nilainya lebih dari 41 dan kurang dari 55 jadi hasilnya D
+	if(val1>56&&60)
+		document.kirim.T2.value="C"
+	//jika nilainya lebih dari 56 dan kurang dari 60  jadi hasilnya C
+	if(val1>61&&65)
+		document.kirim.T2.value="BC"
+	//jika nilainya lebih dari 61 dan kurang dari 65  jadi hasilnya BC
+	if(val1>66&&70)
+		document.kirim.T2.value="B"
+	//jika nilainya lebih dari 66 dan kurang dari 70 jadi hasilnya B
+	if(val1>71&&80)
+		document.kirim.T2.value="AB"
+	//jika nilainya lebih dari 71 dan kurang dari 80 jai hasilnya AB
+	if(val1>81&&100)
+		document.kirim.T2.value="A"
+	//jika nilainya lebih dari 81 dan kurang dari 100 jai hasilnya A
+}
+	</script>
+<body>
+
+<form method="POST" name="kirim">
+
+<p> NILAI ANGKA <input type="text" name="T1" size="20">
+NILAI HURUF <input type="text" name="T2" size="20">
+</p>
+
+<p><input type="button" value="KONVERSI" name="B1" onclick=test()>
+</p>
+</form>
+</body>
+</html>
